@@ -1,7 +1,11 @@
 package menuApp;
+import com.teamdev.jxbrowser.chromium.Browser;
+import com.teamdev.jxbrowser.chromium.swing.Browser;
+
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
+
 //import java.awt.EventQueue;
 
 public class mapFrame extends JFrame {
@@ -9,6 +13,10 @@ public class mapFrame extends JFrame {
 	private JFrame frame;
 	
 	public mapFrame() {
+		Browser browser = new Browser();
+		BrowserView view = new BrowserView(browser);
+		
+		
 		frame = new JFrame();
 		frame.setTitle("저메추 해드릴까요?");
 		frame.setBounds(100, 100, 912, 543);
@@ -29,10 +37,13 @@ public class mapFrame extends JFrame {
 		lb.setFont(new Font("굴림", Font.BOLD, 30));
 		lb.setBounds(68, 62, 462, 64);
 		frame.getContentPane().add(lb);
+		
+		browser.loadURL("https://map.naver.com/p/search/"+menu+"?c="
+				+126.83522816996346,37.55928694686569+",15,0,0,0,dh");
 	}
-	/*
+	
 	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
+	/*	EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					mapFrame window = new mapFrame();
@@ -41,7 +52,9 @@ public class mapFrame extends JFrame {
 					e.printStackTrace();
 				}
 			}
-		});
+		});*/
+		
+		
 	}
-	*/
+	
 }

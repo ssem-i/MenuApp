@@ -14,4 +14,16 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>jxbrowser-7.36.3.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Users/semii/Desktop/%EB%B9%88/jxbrowser-7.36.3-cross-desktop-win_mac_linux/lib/jxbrowser-7.36.3.jar</locationURI>
+		</link>
+		<link>
+			<name>jxbrowser-win64-7.36.3.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Users/semii/Desktop/%EB%B9%88/jxbrowser-7.36.3-cross-desktop-win_mac_linux/lib/jxbrowser-win64-7.36.3.jar</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
